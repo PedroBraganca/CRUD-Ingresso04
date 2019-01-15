@@ -1,0 +1,64 @@
+﻿@model CRUD_Ingresso04.Models.ing
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ing</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.filme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.filme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sessoes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sessoes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cinemas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cinemas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cidade)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

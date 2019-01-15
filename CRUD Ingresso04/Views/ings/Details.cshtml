@@ -1,0 +1,58 @@
+﻿@model CRUD_Ingresso04.Models.ing
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ing</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.filme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.filme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sessoes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sessoes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cinemas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cinemas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cidade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.codigo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
